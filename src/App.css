@@ -1,38 +1,223 @@
-.App {
+#canvas {
+  border-radius: 4px;
+  width: 220px;
+}
+
+#area-imagem {
+  height: max-content;
+}
+
+#logo {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 67px;
+  height: 67px;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#logo img {
+  width: 45px;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+#principal {
+  background-color: white;
+  width: 800px;
+  height: 280px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 4px;
+  gap: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.158);
+}
+
+#infor {
+  width: 100%;
+}
+
+#infor label input {
+  font-size: 17px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EBEBEB;
+}
+
+.label {
+  color: #474747;
+  display: none;
+}
+
+textarea {
+  width: 96%;
+  height: 91%;
+  font-size: 17px;
+  resize: none;
+  background-color: #EBEBEB;
+  border: none;
+  padding: 10px;
+  margin-top: 7px;
+  border-radius: 4px;
+  grid-column: span 2;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #04A514;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c8f19;
+}
+
+#radio {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px 20px 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#radio h1 {
+  margin: 0;
+  font-size: 45px;
+  padding-bottom: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#radio-input {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#radio-input input {
+  width: 18px;
+  height: 18px;
+  accent-color: #04A514;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+#radio-input label {
+  font-size: 19px;
+  font-weight: 500;
+  color: #474747;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+#country {
+ width: 140px;
+ height: 35px;
+ margin-top: 8px;
+ margin-bottom: 33px;
+ background-color: #EBEBEB;
+ border: none;
+}
+
+#phone {
+ margin-top: 8px;
+ width: 400px;
+ height: 35px;
+}
+
+
+/* Classes WhatsApp */
+
+.infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px;
+}
+
+.block {
+  display: block;
+}
+
+.margin {
+  margin-top: 0;
+}
+
+
+@media (max-width: 850px) {
+  #principal {
+    width: 80%;
+    display: block;
+    height: max-content;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    width: max-content;
+    padding: 0 70px;
+    margin: 0;
   }
+
+  #area-imagem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  textarea {
+    width: 95%;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
+  #country {
+    width: 100%;
+   }
+
+   #phone {
+    width: 100%;
+   }
+   
+
+   .infos {
+    width: 100%;
+    gap: 10px;
+  }
+
+  #radio {
+    width: 80%;
+    margin-top: 60px;
+  }
+
+  #radio-input {
+    gap: 13px;
+  }
+
+  #radio h1 {
+    font-size: 30px;
+  }
+
+  #radio-input input {
+    width: 18px;
+    height: 18px;
+  }
+  
+  
+  #radio-input label {
+    font-size: 20px;
+  }
+
 }
