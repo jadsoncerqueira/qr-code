@@ -37,15 +37,17 @@ export default function GenerateQrCode() {
   };
 
   useEffect(() => {
-    if (place === "Message...") {
-      console.log(place)
-      aux = text;
-      aux = `https://wa.me/${ count }${ phon }?text=${aux.replace(/ /g, '%20')}`
-    } else {
-      aux = text
-    }
+    
     CreateQrCode(QRCode, canvas, aux, 220);
-  }, [text, phon, count])
+  })
+
+  if (place === "Message...") {
+    console.log(place)
+    aux = text;
+    aux = `https://wa.me/${ count }${ phon }?text=${aux.replace(/ /g, '%20')}`
+  } else {
+    aux = text
+  }
 
   const teste = aux === '' ? 'qrcode' : aux;
   aux = teste;
