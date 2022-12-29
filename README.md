@@ -1,7 +1,7 @@
 # Projeto TrybeTunes
 
 ## Contexto
-Este projeto foi desenvolvido com o intuito de consolidar os estudos em  __Html__, __Css__ e __Javascript__ durante o curso de Desenvolvimento Web na Trybe.
+Este projeto foi desenvolvido com o intuito de consolidar os estudos em  __React.js__ durante o curso de Desenvolvimento Web na Trybe.
 
 Aqui o objetivo foi construir uma aplicação que gerasse um qrcode de Urls e links personalizados do whatsap, utilizado uma biblioteca externa..
 
