@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import logo from './images/whats.png';
+// import logo from './images/whats.png';
 import { countryCodes } from './utils/countryCodes';
 import { CreateQrCode, Download } from './utils/qrcode';
 const QRCode = require('qrcode');
@@ -44,9 +44,11 @@ export default function GenerateQrCode() {
     } else {
       aux = text
     }
-    aux = aux === '' ? 'qrcode' : aux;
     CreateQrCode(QRCode, canvas, aux, 220);
   }, [text, phon, count])
+
+  const teste = aux === '' ? 'qrcode' : aux;
+  aux = teste;
 
   return (
     <>
@@ -122,7 +124,7 @@ export default function GenerateQrCode() {
               <canvas style={ {
                 display: 'none'
               }} ref={ dwn }></canvas>
-              <div id="logo"><img src={ logo }/></div>
+              {/* <div id="logo"><img src={ logo }/></div> */}
             </div>
             <button onClick={ () => Download(QRCode, dwn, aux) }>Download</button>
           </div>
