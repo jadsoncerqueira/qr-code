@@ -1,4 +1,4 @@
-# Projeto TrybeTunes
+# Projeto QrCode
 
 ## Contexto
 Este projeto foi desenvolvido com o intuito de consolidar os estudos em  __React.js__ durante o curso de Desenvolvimento Web na Trybe.
