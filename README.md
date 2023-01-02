@@ -5,8 +5,6 @@ Este projeto foi desenvolvido com o intuito de consolidar os estudos em  __React
 
 Aqui o objetivo foi construir uma aplicação que gerasse um qrcode de Urls e links personalizados do whatsap, utilizado uma biblioteca externa..
 
-Neste projeto nos foi fornecido pela Trybe algumas funções para agilizar o desenvolvimento , mais especificamente funções da biblioteca usada para geração de qrcodes.
-
 
 ## [Veja Aplicação em funcionamento](https://jadsoncerqueira.github.io/qr-code)
 
