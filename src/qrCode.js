@@ -93,7 +93,7 @@ export default function GenerateQrCode() {
 
   const [text, setText] = useState("");
   const [place, setPlace] = useState("Text or Url...");
-  const [count, setCount] = useState("");
+  const [count, setCount] = useState("+55");
   const [phon, setPhon] = useState("");
 
   const [chavePix, setChavePix] = useState("");
@@ -219,7 +219,7 @@ export default function GenerateQrCode() {
               value={count}
               id="country"
             >
-              <option value="">--</option>
+              <option value="">Brazil (+55)</option>
               {countryCodes.map((countrys, index) => {
                 return (
                   <option key={index} value={countrys.code}>
