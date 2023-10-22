@@ -78,7 +78,7 @@ export default function GenerateQrCode() {
       erro: "(Numero precisa ter 11 numeros)",
       quantidade: 11,
       prefixo: "+55",
-      placeholder: "DD+Numero",
+      placeholder: "DDD+Numero",
     },
   };
 
