@@ -184,7 +184,7 @@ export default function GenerateQrCode() {
               defaultChecked={true}
               type="radio"
             />
-            Text/Url
+            Texto ou Link
           </label>
 
           <label>
